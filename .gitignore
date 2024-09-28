@@ -1,0 +1,61 @@
+# Ignore Python bytecode files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Ignore virtual environment directories
+venv/
+.venv/
+env/
+.env/
+conda_env/
+.conda/
+
+# Ignore Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Ignore log and cache files
+*.log
+*.cache
+.cache/
+*.tmp
+
+# Ignore large dataset files like CSV, Parquet, etc.
+*.csv
+*.parquet
+*.h5
+*.hdf5
+*.db
+*.sqlite
+*.gz
+*.zip
+*.tar
+*.7z
+
+# Ignore output directories
+output/
+outputs/
+results/
+*.out
+*.err
+
+# Ignore Kaggle dataset directories (if downloaded or stored locally)
+kaggle_data/
+data/
+
+# Ignore system files
+.DS_Store
+Thumbs.db
+*.bak
+*.swp
+*.swo
+
+# Ignore environment files (optional)
+*.env
+*.yml
+*.yaml
+
+# Ignore local IDE settings
+.vscode/
+.idea/
+

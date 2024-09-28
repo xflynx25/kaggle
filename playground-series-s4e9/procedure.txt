@@ -1,0 +1,17 @@
+Intial Data Vis
+    - columns, sizing, data types
+    - Nan analysis and coping 
+    - column distributions
+Baseline Model
+    - lasso regression or logistic regression as our quickies
+    - use a fraction of the data
+Cross Validation
+    - get the CV loop implemented
+    - baseline SD by changing the seed, this will inform whether to accept feature engineering changes as significant
+Improving the Model 
+    - try boosting methods 
+    - bi-grams, tri-grams, mathematical-grams 
+    - blending models 
+    - CV on the hyperparameters 
+    - throwing out bad features? 
+    - NN if called for 

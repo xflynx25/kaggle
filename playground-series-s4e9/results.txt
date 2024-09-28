@@ -1,0 +1,13 @@
+[127563.81384838687, - logistic
+ 79410.62772298977,  - ridge
+ 79410.74535723907,  - lasso 
+ 89741.86050076029,  - catboost
+ 88369.46977620976,  - xgb
+ 91386.04653188487,  - gb
+ 81841.18362395788]  - rf
+
+these are with 5 , and .05 of the data 
+rf, ridge, lasso dubbing rn 
+
+trying on 5,8 , and now .1 of the data
+then they all go up to 90k
