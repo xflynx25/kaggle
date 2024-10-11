@@ -1,0 +1,13 @@
+We weren't careful about losing the numerical column information. 
+In these tree models, it will not split on the numerical so much. 
+Next, we should look into the sizes of these transformed df, and see how we can make sure we still are using those (feature importances mb)
+
+We should do more eda. We can see which features seem of actual importance. 
+
+We can try the method of just putting an ordering on them, since that is equivalent for ROC, actual percentages don't matter 
+
+There is the method of autoencoding the categoricals, we will need to think how we can loss function maybe as function of number of rows you got
+
+And eventually this will probably be good with NN
+
+There is the concern with grossly unbalanced dataset. 

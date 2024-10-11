@@ -15,3 +15,29 @@ Improving the Model
     - CV on the hyperparameters 
     - throwing out bad features? 
     - NN if called for 
+
+==========
+When going through, we have this high cardinality categoricals as has been pointed out by others 
+Target encoding is a good quick and easy way to take care of it, which outperforms my intuition way to use some top N binning 
+ridge is outperforming the trees with the simple 12 feature target encoding 
+next we have realization we don't have to just target encode on mean 
+
+probably best to follow up next with outlier work. Model to predict if outlier regime or standard, and seperate model for each. Cutoff probably around 20-30 k
+    - possibly tune or use blended models here to optimize
+this type of activity is basically the job of a nn, so would probably want to work on that next and finally, and maybe need to go to more raw features rather than the target encoding
+
+
+So after all, we tried to do straight outlier by my methods, and by the builtin methods, and did not seem to work. 
+But, we tried to the NN, and this was a success. We were able to slowly push forward, although did not do a proper hyperparameter sweep
+    - this does motivate the implementation of the fast hyhperparam random search for future works 
+- we also did not get to extending features, this would have been good 
+- we mostly just changes the network, added the nan features, a
+and in the end also attempted a voted blended model (which gave us by far the best of all!!!)
+
+in retrospect, happy with how this went. Probably the NN is the good approach here. Probably, we can do much better with proper 
+proper HP search, and with proper feature engineering to give it more information. 
+Challenges include the high sample size so long to run tests, and additionally with the target encoding this varying effect based on that test sie 
+
+It seems that the majority of time here needed to be spent on overengineering some method to deal with the high points. 
+They are apparently very noisy, and very large (>a million). So you need some way to learn these better than others. 
+Oversampling was suggested, multiple models. I think a complex NN could have been good. Just need some way to not overfit the noise. 

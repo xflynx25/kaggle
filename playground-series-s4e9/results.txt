@@ -11,3 +11,7 @@ rf, ridge, lasso dubbing rn
 
 trying on 5,8 , and now .1 of the data
 then they all go up to 90k
+
+
+94068.47369 ± 30447.62092 (where we got 74k actually in the test set) on .05 with the first submission. So eval will be hard. 
+Makes my other scores from earlier seem quite good actually. 
